@@ -5,7 +5,7 @@ class ejabberd::config {
     owner   => 'root',
     group   => 'root',
     mode    => '0640',
-    source  => "puppet:///modules/ejabberd/ejabberd.conf",
+    source  => "puppet:///modules/ejabberd/ejabberd.cfg",
     require => Class[ 'ejabberd::install' ],
     notify  => Class[ 'ejabberd::service' ],
   }

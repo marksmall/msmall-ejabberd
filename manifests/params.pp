@@ -11,7 +11,7 @@ class ejabberd::params {
     }
   }
 
-  $ejabberd_service_config = '/etc/ejabberd/ejabberd.conf'
+  $ejabberd_service_config = '/etc/ejabberd/ejabberd.cfg'
   $ejabberd_service = 'ejabberd'
   
 }
