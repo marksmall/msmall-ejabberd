@@ -1,6 +1,6 @@
 # == Class: ejabberd
 #
-# Full description of class ejabberd here.
+# Install, configure and run as a service the ejabberd XMPP daemon.
 #
 # === Parameters
 #
@@ -29,7 +29,7 @@
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Author Name <marksmall@gmx.com>
 #
 # === Copyright
 #
@@ -37,5 +37,9 @@
 #
 class ejabberd {
 
+  include ejabberd::params
+  include ejabberd::install
+  include ejabberd::config
+  include ejabberd::service
 
 }
